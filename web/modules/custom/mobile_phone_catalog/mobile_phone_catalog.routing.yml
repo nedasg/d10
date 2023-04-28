@@ -1,0 +1,6 @@
+mobile_phone_catalog.list:
+  path: '/list'
+  defaults:
+    _controller: '\Drupal\mobile_phone_catalog\Controller\MobilePhoneCatalogController::list'
+  requirements:
+    _permission: 'access content'

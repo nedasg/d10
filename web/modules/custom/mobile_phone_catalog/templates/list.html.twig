@@ -1,0 +1,10 @@
+<h1>{{ _context.title }}</h1>
+
+<div style="display: flex; justify-content: space-evenly;">
+  {% for phone in _context.catalog %}
+    <div>
+      <h2>{{ phone.brand.value }}</h2>
+      <h4>{{ phone.model.value }}</h4>
+    </div>
+  {% endfor %}
+</div>
