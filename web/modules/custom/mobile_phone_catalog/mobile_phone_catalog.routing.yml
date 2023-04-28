@@ -4,3 +4,12 @@ mobile_phone_catalog.list:
     _controller: '\Drupal\mobile_phone_catalog\Controller\MobilePhoneCatalogController::list'
   requirements:
     _permission: 'access content'
+
+mobile_phone_catalog.json:
+  path: '/json'
+  defaults:
+    _controller: '\Drupal\mobile_phone_catalog\Controller\MobilePhoneCatalogController::json'
+    _format: 'json'
+  methods: [GET]
+  requirements:
+    _permission: 'access content'
