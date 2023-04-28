@@ -1,2 +1,6 @@
 *
-!/web/modules/custom/mobile_phone_catalog
+!web/
+!web/modules/
+!web/modules/custom/
+!web/modules/custom/mobile_phone_catalog/
+!web/modules/custom/mobile_phone_catalog/**

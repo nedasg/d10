@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mobile_phone
+  module:
+    - node
+  enforced:
+    module:
+      - mobile_phone_catalog
+entity_type: node
+bundle: mobile_phone
+id: node.mobile_phone.availability
+field_name: availability
+label: Availability
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: false
+default_value_callback: ''
+settings: {  }
+third_party_settings: {  }
+field_type: boolean

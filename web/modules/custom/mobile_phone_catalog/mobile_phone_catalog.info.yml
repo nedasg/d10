@@ -1,0 +1,10 @@
+name: Mobile Phone Catalog
+description: Enables Mobile Phone Catalog by Mobile Phone content type
+package: Custom
+type: module
+core_version_requirement: ^10
+dependencies:
+  - drupal:node
+  - drupal:path
+  - drupal:text
+  - drupal:options

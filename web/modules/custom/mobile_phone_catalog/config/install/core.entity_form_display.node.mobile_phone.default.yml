@@ -1,0 +1,90 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mobile_phone.brand
+    - field.field.node.mobile_phone.model
+    - field.field.node.mobile_phone.price
+    - field.field.node.mobile_phone.availability
+    - node.type.mobile_phone
+  module:
+    - node
+    - path
+    - text
+    - options
+  enforced:
+    module:
+      - mobile_phone_catalog
+id: node.mobile_phone.default
+targetEntityType: node
+bundle: mobile_phone
+mode: default
+content:
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  brand:
+    type: string_textfield
+    weight: 6
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings: { }
+  model:
+    type: string_textfield
+    weight: 7
+    settings:
+      size: 30
+      placeholder: ''
+    third_party_settings: { }
+  price:
+    type: number
+    weight: 8
+    settings:
+      min: 0
+      max: 10000
+      decimal_places: 2
+      step: '0.01'
+    third_party_settings: { }
+  availability:
+    type: boolean_checkbox
+    weight: 9
+    settings: {  }
+    third_party_settings: { }
+hidden: {  }
+third_party_settings: {  }

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+name: 'Mobile Phone'
+type: mobile_phone
+description: 'Mobile Phone content type.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true
+third_party_settings: {  }
+dependencies:
+  enforced:
+    module:
+      - mobile_phone_catalog

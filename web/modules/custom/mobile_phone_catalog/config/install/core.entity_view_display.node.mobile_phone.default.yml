@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mobile_phone.brand
+    - field.field.node.mobile_phone.model
+    - field.field.node.mobile_phone.price
+    - field.field.node.mobile_phone.availability
+    - node.type.mobile_phone
+  module:
+    - node
+    - path
+    - text
+    - options
+    - user
+  enforced:
+    module:
+      - mobile_phone_catalog
+id: node.mobile_phone.default
+targetEntityType: node
+bundle: mobile_phone
+mode: default
+content:
+  brand:
+    type: text_default
+    weight: 101
+    settings: { }
+    third_party_settings: { }
+  model:
+    type: text_default
+    weight: 102
+    settings: { }
+    third_party_settings: { }
+  price:
+    type: number_decimal
+    weight: 103
+    settings: { }
+    third_party_settings: { }
+  availability:
+    type: boolean
+    weight: 104
+    settings: { }
+    third_party_settings: { }
+  links:
+    weight: 100
+hidden: {  }
