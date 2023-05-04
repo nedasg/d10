@@ -3,7 +3,6 @@
 namespace Drupal\mobile_phone_catalog\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\Core\Entity\EntityType;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
@@ -12,6 +11,20 @@ use Symfony\Component\HttpFoundation\JsonResponse;
  * @ingroup mobile_phone_catalog
  */
 class MobilePhoneCatalogController extends ControllerBase {
+
+  public function listInCustomTheme() {
+    $entities = $this->getMobilePhoneEntitiesFromDB();
+
+    $output = [
+      '#theme' => 'stylish',
+      '#content' => [
+        'title' => 'Mobile Phone Catalog',
+        'catalog' => $entities,
+      ],
+    ];
+
+    return $output;
+  }
 
   public function list() {
     $entities = $this->getMobilePhoneEntitiesFromDB();

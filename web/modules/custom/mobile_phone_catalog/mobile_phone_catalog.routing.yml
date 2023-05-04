@@ -5,6 +5,13 @@ mobile_phone_catalog.list:
   requirements:
     _permission: 'access content'
 
+mobile_phone_catalog.list_in_custom_theme:
+  path: '/nice'
+  defaults:
+    _controller: '\Drupal\mobile_phone_catalog\Controller\MobilePhoneCatalogController::listInCustomTheme'
+  requirements:
+    _permission: 'access content'
+
 mobile_phone_catalog.json:
   path: '/json'
   defaults:

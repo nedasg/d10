@@ -1,0 +1,17 @@
+.catalog {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #a9a9a9;
+}
+
+.catalog > div {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #fafafa;
+  border-radius: 15px;
+  background-color: #fafafa;
+}

@@ -1,0 +1,5 @@
+mobile-phone-catalog:
+  version: 1.x
+  css:
+    theme:
+      css/mobile_phone_catalog.css: {}

@@ -4,3 +4,17 @@
  * @file
  * Module file for mobile_phone_catalog.
  */
+
+function mobile_phone_catalog_theme($existing, $type, $theme, $path) {
+  return [
+    'stylish' => [
+      'variables' => [
+        'content' => [],
+      ]
+    ]
+  ];
+}
+
+function mobile_phone_catalog_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'mobile_phone_catalog/mobile-phone-catalog';
+}

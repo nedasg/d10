@@ -1,0 +1,10 @@
+<h1>{{ content.title }}</h1>
+
+<div class="catalog">
+  {% for phone in content.catalog %}
+    <div>
+      <h2>{{ phone.brand.value }}</h2>
+      <h4>{{ phone.model.value }}</h4>
+    </div>
+  {% endfor %}
+</div>
